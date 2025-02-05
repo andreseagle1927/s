@@ -1,198 +1,992 @@
-<!DOCTYPE html>
+"<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andres Abadia - Portfolio</title>
+  <title>Personal Portfolio</title>
 
-  <link rel="shortcut icon" href="./assets/images/avatar.png" type="image/x-icon">
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/blog-2.jpg" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
   <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+  <!--
+    - #MAIN
+  -->
+
   <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
     <aside class="sidebar" data-sidebar>
+
       <div class="sidebar-info">
+
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Andres Abadia" width="80">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name">Andres Abadia</h1>
-          <p class="title">Software Engineer Intern</p>
+          <h1 class="name" title="Richard hanrick">Andres Abadia</h1>
+
+          <p class="title">Junior Developer</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
           <span>Show Contacts</span>
+
           <ion-icon name="chevron-down"></ion-icon>
         </button>
+
       </div>
 
       <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
         <ul class="contacts-list">
+
           <li class="contact-item">
+
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
+
             <div class="contact-info">
-              <p>Email</p>
-              <a href="mailto:adabadiaa@correo.usbcali.edu.co">adabadiaa@correo.usbcali.edu.co</a>
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:adabadiaa@correo.usbcali.edu.co" class="contact-link">adabadiaa@correo.usbcali.edu.co</a>
             </div>
+
           </li>
 
           <li class="contact-item">
+
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
-            <div class="contact-info">
-              <p>Phone</p>
-              <a href="tel:+573122955268">+57 (312) 295-5268</a>
-            </div>
-          </li>
 
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+573122955268" class="contact-link">+57 (312) 295-5268</a>
+            </div>
+
+          </li>
           <li class="contact-item">
             <div class="icon-box">
-              <img src="./assets/images/wt.png" width="80%" alt="Telegram/WhatsApp">
+                <img src="./assets/images/wt.png" width="80%" alt="">
             </div>
+
             <div class="contact-info">
-              <p>Telegram & WhatsApp</p>
-              <a href="tel:+18016341333">+1 (801) 634-1333</a>
+              <p class="contact-title">Telegram and Whatsapp</p>
+
+              <a href="tel:+18016341333" class="contact-link">+1 (801) 634-1333</a>
             </div>
           </li>
 
           <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">October 25, 2001 </time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
+
             <div class="contact-info">
-              <p>Location</p>
-              <address>Cali, Colombia</address>
+              <p class="contact-title">Location</p>
+
+              <address>Cali, Colombia </address>
             </div>
+
           </li>
+
         </ul>
+
+        <div class="separator"></div>
 
         <ul class="social-list">
-          <li><a href="https://github.com/andreseagle1927">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/andres-alferes-a85a9624a/">LinkedIn</a></li>
+          <ul class="social-list">
+
+            <a style="color:beige;" href="https://github.com/andreseagle1927">Git Hub</a>
+              <a style="color:beige;" href="https://www.linkedin.com/in/andres-alferes-a85a9624a/">Linkedin</a>
+  
+  
+          </ul>
+
         </ul>
+
       </div>
+
     </aside>
 
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
     <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
       <nav class="navbar">
+
         <ul class="navbar-list">
-          <li><a href="#about" class="navbar-link active">About</a></li>
-          <li><a href="#skills" class="navbar-link">Skills</a></li>
-          <li><a href="#projects" class="navbar-link">Projects</a></li>
-          <li><a href="#contact" class="navbar-link">Contact</a></li>
+
+          <a class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </a>
+
+          <a class="navbar-item" href="./resume.html">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </a>
+
+    
+          <a class="navbar-item" href="./Projects.html">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </a>
+
+         
         </ul>
+
       </nav>
 
-      <article id="about" class="about">
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
         <header>
-          <h2>About Me</h2>
+          <h2 class="h2 article-title">About me</h2>
         </header>
-        <section>
+
+        <section class="about-text">
           <p>
-            I am a passionate Software Engineer with expertise in developing scalable backend solutions, 
-            cloud architectures, and implementing cutting-edge technologies like Apache Kafka, gRPC, 
-            and machine learning systems. I excel in building microservices with Spring Boot and integrating 
-            NoSQL and SQL databases to support real-time and asynchronous systems.
+         Software Engineer from San Buenaventura University in Cali - Colombia , Software Engineer Intern at Globant , I have extensive theoretical and practical experience in software development, Testing, Cybersecurity, APIs, Cloud , Data Engineering, Data Science, Architectures, Patterns , Principles and Best Practices. I have worked with programming languages 📝 like Python, Java, Typescript , and SQL, leveraging frameworks ⚙️ such as Spring Boot, FastAPI, Cloud Serveless , and Express for backend development. I have expertise in APIs 📬 (REST, GraphQL, gRPC), authentication 🔑 (OAuth 2.0, JWT), security 🔒 (TLS 1.3, Zero Trust, AWS WAF), and cloud platforms (AWS, GCP, Azure). 
+
+In testing ⚠️ and DevOps ⛏️ , I have implemented CI/CD pipelines with Jenkins, GitHub Actions, and Docker 🐳 , ensuring secure and scalable applications. As a data engineer 📊 and data scientist, I have built ETL pipelines ✅ with Apache Airflow, dbt, and AWS Glue, processed big data 📈 using Apache Spark and Kafka, and developed machine learning models with TensorFlow, PyTorch, and Scikit-Learn, deploying them on AWS SageMaker and Kubernetes.📦 I am passionate about scalable architectures, cloud computing 📡 , and AI-driven solutions 🤖 .
           </p>
         </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/spring-3.svg"
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Springframework / Springboot </h4>
+
+                <p class="service-item-text">
+                  AOP, MVC <br> Api Rest
+                </p>
+              </div>
+
+            </li>
+            
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/java.png" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Java</h4>
+
+                <p class="service-item-text">
+                 Java 8 <br>
+                 Junit5 <br>
+                 Mockito
+                </p>
+              </div>
+
+            </li>
+
+            
+            
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/mysql (1).png
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">MySQL DDBB</h4>
+
+                <p class="service-item-text"> Database design <br>
+                  Relational models <br> 
+                  Querys 
+
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/pr.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Structures</h4>
+
+                <p class="service-item-text">
+                  Stacks and Queues <br>
+                  Sorting Algorithms 
+                  <br> Hash Table, Binary Tree
+                </p>
+              </div>
+
+            </li>
+
+           
+            
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/git.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Git</h4>
+
+                <p class="service-item-text">
+                  Fundamentals commands to work with repositories on GitHub
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/browser-web-svgrepo-com.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">WEB</h4>
+
+                <p class="service-item-text">
+                  HTML <br> CSS<br> JavaScript
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+          <br>
+
+          
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+          <section class="service">
+
+            <h3 class="h3 service-title">Soft Skills</h3>
+  
+            <ul class="service-list">
+  
+              
+  
+              <li class="service-item">
+  
+                <div class="service-icon-box">
+                  <img src="./assets/images/amb.png"
+                  " alt="design icon" width="40">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Self learning</h4>
+  
+              
+                </div>
+  
+              </li>
+              
+              <li class="service-item">
+  
+                <div class="service-icon-box">
+                  <img src="./assets/images/learning.png" alt="design icon" width="40">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title"> Self-management</h4>
+  
+                </div>
+  
+              </li>
+  
+              
+              
+  
+              <li class="service-item">
+  
+                <div class="service-icon-box">
+                  <img src="./assets/images/partners.png"
+                  " alt="design icon" width="40">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Team Work</h4>
+
+                </div>
+  
+              </li>
+  
+              <li class="service-item">
+  
+                <div class="service-icon-box">
+                  <img src="./assets/images/self-improvement.png" alt="Web development icon" width="40">
+                </div>
+  
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Ambition to learn</h4>
+  
+              
+                </div>
+  
+              </li>
+  
+             
+        
+  
+              
+  
+            </ul>
+  
+            <br>
+  
+            
+  
+          </section>
+
+          
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+       
+        
+
+
+        <!--
+          - clients
+        -->
+
+       
       </article>
 
-      <article id="skills" class="skills">
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
         <header>
-          <h2>What I'm Doing</h2>
+          <h2 class="h2 article-title">Resume</h2>
         </header>
-        <section class="skill-section">
-          <h3>Backend Development</h3>
-          <ul>
-            <li>Spring Boot (AOP, REST APIs, Microservices)</li>
-            <li>Spring Cloud (Eureka, Config Server, Resilience4j)</li>
-            <li>Apache Kafka (Real-time Streaming)</li>
-            <li>gRPC (Low-latency communication)</li>
-          </ul>
+
+        <section class="about-text">
+          <p> 2 years studying Software Systems Engineering at <a style="color:rgb(192, 159, 9);" href="https://www.usbcali.edu.co/"> Universidad San Buenaventura </a> </p>
+      </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            
+
+            <h3 class="h3">Education</h3>
+            
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> Programming Fundamentals </h4>
+
+              <span>2021, 5 Months</span>
+
+              <p class="timeline-text">
+                where I learned to program in Java and Python
+              </p>
+
+              
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Object-oriented programming</h4>
+
+              <span>2021, 5 Months</span>
+
+              <p class="timeline-text">
+                I learned about the paradigm, how to work with it, and how to use it to solve real-life problems.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data Structures and Algorithms</h4>
+
+              <span>2022, 5 Months</span>
+
+              <p class="timeline-text">
+                Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur
+                magni dolores
+                eos.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software analysis and design</h4>
+
+              <span>2022, 5 Months</span>
+
+              <p class="timeline-text">
+                understand and perform software application designs
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Data Base 1</h4>
+
+              <span>2022, 4 Months</span>
+
+              <p class="timeline-text">
+                Database design, SGDB, custom queries
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Advanced programming techniques</h4>
+
+              <span>2022, 4 Months</span>
+
+              <p class="timeline-text">
+                Development of a backend project with agile methodologies
+              </p>
+
+            </li>
+
+
+          </ol>
+
         </section>
 
-        <section class="skill-section">
-          <h3>Database Management</h3>
-          <ul>
-            <li>MySQL (Relational Models, Queries)</li>
-            <li>MongoDB (NoSQL, Scalability)</li>
-            <li>Redis (Caching, Pub/Sub)</li>
-          </ul>
-        </section>
+        
 
-        <section class="skill-section">
-          <h3>DevOps & Cloud</h3>
-          <ul>
-            <li>CI/CD Pipelines (Jenkins, GitHub Actions)</li>
-            <li>Docker & Kubernetes</li>
-            <li>AWS (S3, Lambda, DynamoDB, ECS)</li>
-            <li>Prometheus & Grafana (Monitoring and Metrics)</li>
-          </ul>
-        </section>
+        
 
-        <section class="skill-section">
-          <h3>Programming Languages</h3>
-          <ul>
-            <li>Java (Junit5, Mockito)</li>
-            <li>Python (Data Science, APIs)</li>
-            <li>JavaScript (Node.js, Express)</li>
-          </ul>
-        </section>
-
-        <section class="skill-section">
-          <h3>AI & Data Engineering</h3>
-          <ul>
-            <li>TensorFlow & PyTorch (Model Training)</li>
-            <li>Apache Spark (Big Data Processing)</li>
-            <li>ETL Pipelines (Airflow, AWS Glue)</li>
-          </ul>
-        </section>
       </article>
 
-      <article id="projects" class="projects">
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
         <header>
-          <h2>Highlighted Projects</h2>
+          <h2 class="h2 article-title">Portfolio</h2>
         </header>
-        <section>
-          <h3>1. Real-time Streaming Platform</h3>
-          <p>Built a Kafka-based streaming platform to process millions of events per second for an e-commerce recommendation engine.</p>
 
-          <h3>2. Microservices for Online Gaming</h3>
-          <p>Designed and implemented a microservices architecture for a multiplayer game backend using Spring Boot and WebSockets.</p>
+        <section class="projects">
 
-          <h3>3. AI-Powered Chatbot</h3>
-          <p>Developed a chatbot with OpenAI GPT APIs for customer support, integrated with a React frontend.</p>
+          <ul class="filter-list">
 
-          <h3>4. ETL Pipeline for Big Data</h3>
-          <p>Built an ETL pipeline with Apache Airflow to process and analyze terabytes of data on AWS S3.</p>
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
         </section>
+
       </article>
 
-      <article id="contact" class="contact">
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="projects" data-page="projects">
+
         <header>
-          <h2>Contact Me</h2>
+          <h2 class="h2 article-title">Blog</h2>
         </header>
-        <section>
-          <p>Email: <a href="mailto:adabadiaa@correo.usbcali.edu.co">adabadiaa@correo.usbcali.edu.co</a></p>
-          <p>Phone: <a href="tel:+573122955268">+57 (312) 295-5268</a></p>
-          <p>Location: Cali, Colombia</p>
-          <p>GitHub: <a href="https://github.com/andreseagle1927">andreseagle1927</a></p>
-          <p>LinkedIn: <a href="https://www.linkedin.com/in/andres-alferes-a85a9624a/">Andres Abadia</a></p>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="./WebScraping.html">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Untitled (6).png" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Python</p>
+
+                    <span class="dot"></span>
+
+                    <p class="blog-category">2 days</p>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Get last news from CNN and NBC using Web Scraping with Python</h3>
+
+                  <p class="blog-text">
+                    Using the BeautifulSoup python library, we can fetch the latest news from the CBN and CNN news platforms
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="./botDiscord.html">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Untitled(2) (1).png"  alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Python</p>
+
+                    <span class="dot"></span>
+
+                    <p class="blog-category">3 days</p>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Discord bot with data from WebScrapping</h3>
+
+                  <p class="blog-text">
+                    bot made in python and repl.it that delivers the latest news from CNN or NBC through commands
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="./fallBall.html">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/falling.png" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Unity - C#</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">1 Month </time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Fall ball App, Mobile Game with Unity using Google Ads</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="./triangleRun.html">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/redapp.png" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Unity - C#</p>
+
+                    <span class="dot"></span>
+                    <p class="blog-category"> 4 Months</p>
+
+                  </div>
+
+                  <h3 class="h3 blog-item-title"> Triangle Run, Mobile Game made with Unity using Google ads </h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            
+
+          </ul>
+
         </section>
+
       </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63723.238615780356!2d-76.56480564102354!3d3.4224787970657484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcce39104176e7bd0!2zM8KwMjUnMjEuMCJOIDc2wrAzMSc0Ny4zIlc!5e0!3m2!1ses!2sco!4v1666514690293!5m2!1ses!2sc" width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        
+
+      </article>
+
     </div>
+
   </main>
 
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
   <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
